@@ -17,6 +17,10 @@ body {
   color: var(--foreground);
 }
 
+* {
+  letter-spacing: -0.04em;
+}
+
 .text-gradient {
   background: linear-gradient(135deg, rgb(28, 28, 28) 0%, rgb(84, 84, 84) 100%);
   -webkit-background-clip: text;

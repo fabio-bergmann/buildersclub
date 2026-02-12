@@ -43,11 +43,11 @@ export default function Home() {
 
         {/* Heading */}
         <StaggeredFade index={2} className="mb-4">
-          <h1 className="text-gradient max-w-2xl text-center text-5xl font-semibold leading-[1.15] tracking-tight sm:text-6xl">
+          <h1 className="text-gradient max-w-2xl pb-2 text-center text-5xl font-semibold leading-[1.15] sm:text-6xl">
             Get In the Room
             <br />
             Where Things Get{" "}
-            <span className="font-serif font-light italic">Built</span>
+            <span className="font-serif font-light italic tracking-[-0.02em]">Built</span>
           </h1>
         </StaggeredFade>
 
