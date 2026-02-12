@@ -47,7 +47,7 @@ export default function Home() {
             Get In the Room
             <br />
             Where Things Get{" "}
-            <span className="font-serif font-light italic tracking-[-0.02em]">Built</span>
+            <span className="font-serif font-light italic tracking-[-0.02em] pr-1">Built</span>
           </h1>
         </StaggeredFade>
 
