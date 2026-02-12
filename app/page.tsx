@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LogoIcon } from "./components/logo-icon";
 import { StaggeredFade } from "./components/staggered-fade";
 import { WaitlistForm } from "./components/waitlist-form";
 
@@ -19,18 +20,12 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center">
         {/* Logo */}
         <StaggeredFade index={0} className="mb-8">
-          <Image
-            src="/logo.svg"
-            alt="Builders Club"
-            width={72}
-            height={72}
-            priority
-          />
+          <LogoIcon className="h-[72px] w-[72px]" />
         </StaggeredFade>
 
         {/* Badge */}
         <StaggeredFade index={1} className="mb-8">
-          <div className="flex w-min items-center gap-2 rounded-[100px] bg-[#f5f5f5] px-3 py-1">
+          <div className="flex w-min items-center gap-2 rounded-[100px] border border-white/30 bg-white/10 px-3 py-1 backdrop-blur-md">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping [animation-duration:2s] rounded-full bg-green-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />

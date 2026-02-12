@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import { DM_Serif_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -35,6 +36,12 @@ export default function RootLayout({
         className={`${dmSans.variable} ${dmSerif.variable} antialiased font-sans`}
       >
         {children}
+        <Script
+          src="https://datafa.st/js/script.js"
+          data-website-id="dfid_t6y0oUQZAOT85e2wY3o0t"
+          data-domain="buildersclub.co"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
